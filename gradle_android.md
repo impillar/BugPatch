@@ -40,7 +40,7 @@ The `-a` option means `--all`, `-u` means `--no-ui`, `-t` is used to specify the
 When you run `gradle build` in the Android project, you may encounter a problem that cannot find the aapt program like the following
 
 ```sh
-Error: Cannot run program "[ANDROID_SDK]/build-tools/23.0.3/aapt": java.io.IOException: error=2, No such file or directory
-```
+java.io.IOException: Cannot run program "[ANDROID_SDK]/build-tools/23.0.3/aapt": error=2, No such file or directory```
+
 You can fix it by installing `lib32stdc++6` and  `lib32z1`
 

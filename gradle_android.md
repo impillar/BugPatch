@@ -1,5 +1,13 @@
 Use gradle to build Android projects without GUI in Ubuntu.
 
+Environment | Value
+------------ | -------------
+OS | Ubuntu 14.04
+Gradle | 2.12
+Android | >= API 23
+
+
+
 **1. Cannot find specific Build Tools**
 
 ```sh
@@ -40,7 +48,8 @@ The `-a` option means `--all`, `-u` means `--no-ui`, `-t` is used to specify the
 When you run `gradle build` in the Android project, you may encounter a problem that cannot find the aapt program like the following
 
 ```sh
-java.io.IOException: Cannot run program "[ANDROID_SDK]/build-tools/23.0.3/aapt": error=2, No such file or directory```
+java.io.IOException: Cannot run program "[ANDROID_SDK]/build-tools/23.0.3/aapt": error=2, No such file or directory
+```
 
 You can fix it by installing `lib32stdc++6` and  `lib32z1`
 

@@ -43,14 +43,6 @@ Then you can install the specific build tool with
 The `-a` option means `--all`, `-u` means `--no-ui`, `-t` is used to specify the number of items. 
 
 
-**3. Lint Problem**
-
-The error message is as follows:
-
-```sh
-```
-
-
 **2. Cannot find aapt**
 
 When you run `gradle build` in the Android project, you may encounter a problem that cannot find the aapt program like the following
@@ -61,3 +53,24 @@ java.io.IOException: Cannot run program "[ANDROID_SDK]/build-tools/23.0.3/aapt":
 
 You can fix it by installing `lib32stdc++6` and  `lib32z1`
 
+**3. Lint Problem**
+
+The error message is as follows. Just add the `lintOptions` in your build.gradle file
+
+```sh
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:lint'.
+> Lint found errors in the project; aborting build.
+
+  Fix the issues identified by lint, or add the following to your build script to proceed with errors:
+  ...
+  android {
+      lintOptions {
+          abortOnError false
+      }
+  }
+  ...
+
+```

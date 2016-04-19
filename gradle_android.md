@@ -43,6 +43,14 @@ Then you can install the specific build tool with
 The `-a` option means `--all`, `-u` means `--no-ui`, `-t` is used to specify the number of items. 
 
 
+**3. Lint Problem**
+
+The error message is as follows:
+
+```sh
+```
+
+
 **2. Cannot find aapt**
 
 When you run `gradle build` in the Android project, you may encounter a problem that cannot find the aapt program like the following
